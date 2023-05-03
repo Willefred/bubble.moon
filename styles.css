@@ -1,0 +1,66 @@
+body {
+    background-color: #1f2937;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  
+  h1 {
+    color: #e5e7eb;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 25px;
+  }
+  
+  ol {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #e5e7eb;
+    font-family: 'Darumadrop One', cursive;
+    list-style-type: none;
+    gap: 10px;
+    margin-left: auto;
+  }
+  
+  li {
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  li:hover::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    background-color: #1f2937;
+    padding: 0;
+    color: #e5e7eb;
+  }
+  
+  .onefont:hover::before {
+    content: "ホームページ!";
+  }
+  
+  .twofont:hover::before {
+    content: "コンテンツ!";
+  }
+  
+  .threefont:hover::before {
+    content: "だいたい!";
+  }
+  
