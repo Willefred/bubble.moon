@@ -1,11 +1,17 @@
 body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
     background-color: #1f2937;
+    background-image: url("/Users/gaiusiulius/Desktop/DEV/repos/odin_demo_page/picture_database/space_background_texture.jpeg");
   }
   
   .header {
     display: flex;
-    justify-content: space-evenly; 
     align-items: center;
+    justify-content: space-between;
+    background-color: #1f2937;
+    padding: 5px 0;
   }
   
   .container {
@@ -16,24 +22,31 @@ body {
   .logo {
     display: flex;
     align-items: center;
+    margin-left: 40px;
     margin-right: auto;
   }
   
   h1 {
     color: #e5e7eb;
-    font-family: 'Darumadrop One', cursive;
+    font-family: 'Darumadrop One';
     font-size: 25px;
+  }
+  
+  h1.landingtext {
+    text-align: center;
+    font-size: 120px;
   }
   
   ol {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     font-size: 18px;
     color: #e5e7eb;
     font-family: 'Darumadrop One', cursive;
     list-style-type: none;
     gap: 10px;
-    margin-left: auto;
+    margin: 0 40px 0 auto;
   }
   
   li {
@@ -47,7 +60,7 @@ body {
     top: 100%;
     left: 0;
     z-index: 2;
-    background-color: #1f2937;
+    background-color: #1f293700;
     padding: 0;
     color: #e5e7eb;
   }
@@ -62,5 +75,44 @@ body {
   
   .threefont:hover::before {
     content: "だいたい!";
+  }
+  
+  .fourfont:hover::before {
+    content: "ショップ";
+  }
+  
+  .bubblemoon:hover::before {
+    content: "バブルムーン";
+  }
+  
+  .landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  .bubbletea {
+    margin: auto;
+    width: 120px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform-origin: center bottom;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translateY(0) rotate(10deg);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+      transform: translateY(-20px) rotate(-20deg);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translateY(0) rotate(10deg);
+    }
   }
   
