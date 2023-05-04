@@ -3,7 +3,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #1f2937;
-    background-image: url("/Users/gaiusiulius/Desktop/DEV/repos/odin_demo_page/picture_database/space_background_texture.jpeg");
     object-fit: contain;
   }
 
@@ -14,10 +13,17 @@ body {
     background-color: #1f2937;
     padding: 5px 0;
     filter: drop-shadow(0 0 0.75rem #1f2937);
+    background-image: url("/Users/gaiusiulius/Desktop/DEV/repos/odin_demo_page/picture_database/texture.png");
+    background-repeat: repeat-y repeat-x;
+    background-size: 100px;
   }
 
   .landing {
-    margin-bottom: 100px;
+    padding-bottom: 60px;
+    background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.1),
+                    rgba(0, 0, 0, 0.5)),
+                      url("/Users/gaiusiulius/Desktop/DEV/repos/odin_demo_page/picture_database/space_background_texture.jpeg");
     filter: drop-shadow(0 0 0.75rem #1f2937);
   }
 
@@ -33,6 +39,9 @@ body {
 
   .flavours {
     background-color: #1f2937;
+    background-image: url("/Users/gaiusiulius/Desktop/DEV/repos/odin_demo_page/picture_database/texture.png");
+    background-repeat: repeat-y repeat-x;
+    background-size: 100px;
   }
   
   .details {
@@ -52,20 +61,39 @@ body {
 
   .containertwo {
     margin-top: 100px;
+    gap: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
-
   .block {
-    background-color: #181818;
     width: 300px;
     height: 300px;
+    box-shadow: #181818;
+    border-style: dashed;
     border-width: 10px;
     border-radius: 5px;
     border-color: #181818;
+    background-image: linear-gradient (rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+
+  .blockgroup {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blocktext{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    max-width: 900px;
+    font-size: 30px;
+    font-family: 'Nanum Pen Script', cursive;
+    color: #e5e7eb
   }
 
   .logo {
@@ -170,18 +198,21 @@ body {
     }
   }
   button {
-    font-family: 'Darumadrop One';
+    font-family: 'Sigmar', cursive;
     position: relative;
-    padding: 12px 35px;
+    padding: 10px 70px;
     background: #FEC195;
-    font-size: 17px;
+    font-size: 30px;
     font-weight: 500;
-    color: #181818;
+    color: #232e3d;
     border: 3px solid #FEC195;
     border-radius: 8px;
     box-shadow: 0 0 0 #fec1958c;
     transition: all .3s ease-in-out;
     filter: drop-shadow(0 0 0.75rem #FEC195);
+    background-image: url("/Users/gaiusiulius/Desktop/DEV/repos/odin_demo_page/picture_database/texture.png");
+    background-repeat: repeat-y repeat-x;
+    background-size: 100px;
   }
   
   .star-1 {
