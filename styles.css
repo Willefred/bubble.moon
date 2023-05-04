@@ -4,21 +4,70 @@ body {
     flex-direction: column;
     background-color: #1f2937;
     background-image: url("/Users/gaiusiulius/Desktop/DEV/repos/odin_demo_page/picture_database/space_background_texture.jpeg");
+    object-fit: contain;
   }
-  
+
   .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #1f2937;
     padding: 5px 0;
+    filter: drop-shadow(0 0 0.75rem #1f2937);
+  }
+
+  .landing {
+    margin-bottom: 100px;
+    filter: drop-shadow(0 0 0.75rem #1f2937);
+  }
+
+  .landingheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .planet {
+    margin-top: 60px;
+  }
+
+  .flavours {
+    background-color: #1f2937;
   }
   
+  .details {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    max-width: 900px;
+    font-size: 45px;
+    font-family: 'Nanum Pen Script', cursive;
+    color: #e5e7eb
+  }
+
   .container {
     display: flex;
     align-items: center;
   }
-  
+
+  .containertwo {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+
+  .block {
+    background-color: #181818;
+    width: 300px;
+    height: 300px;
+    border-width: 10px;
+    border-radius: 5px;
+    border-color: #181818;
+  }
+
   .logo {
     display: flex;
     align-items: center;
@@ -35,6 +84,7 @@ body {
   h1.landingtext {
     text-align: center;
     font-size: 120px;
+    margin-bottom: 10px;
   }
   
   ol {
@@ -61,6 +111,7 @@ body {
     left: 0;
     z-index: 2;
     background-color: #1f293700;
+    border-radius: 25px;
     padding: 0;
     color: #e5e7eb;
   }
@@ -70,7 +121,7 @@ body {
   }
   
   .twofont:hover::before {
-    content: "コンテンツ!";
+    content: "フレーバー!";
   }
   
   .threefont:hover::before {
@@ -78,21 +129,24 @@ body {
   }
   
   .fourfont:hover::before {
-    content: "ショップ";
+    content: "ショップ!";
   }
   
   .bubblemoon:hover::before {
-    content: "バブルムーン";
+    content: "バブルムーン!";
   }
   
   .landing {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  
   .bubbletea {
+    position: relative;
+    top: 45px;
+    right: 25px;
     margin: auto;
     width: 120px;
     overflow: hidden;
@@ -104,15 +158,164 @@ body {
   @keyframes float {
     0% {
       box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-      transform: translateY(0) rotate(10deg);
+      transform: translateY(0);
     }
     50% {
       box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-      transform: translateY(-20px) rotate(-20deg);
+      transform: translateY(-20px);
     }
     100% {
       box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-      transform: translateY(0) rotate(10deg);
+      transform: translateY(0);
     }
   }
+  button {
+    font-family: 'Darumadrop One';
+    position: relative;
+    padding: 12px 35px;
+    background: #FEC195;
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    border: 3px solid #FEC195;
+    border-radius: 8px;
+    box-shadow: 0 0 0 #fec1958c;
+    transition: all .3s ease-in-out;
+    filter: drop-shadow(0 0 0.75rem #FEC195);
+  }
   
+  .star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all .8s ease;
+  }
+  
+  button:hover {
+    background: transparent;
+    color: #FEC195;
+    box-shadow: 0 0 25px #fec1958c;
+  }
+  
+  button:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .fil0 {
+    fill: #FFFDEF
+  }
